@@ -11,7 +11,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import pt.rodrigo.hw1_tqs.repositories.BookingRepository;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.greaterThanOrEqualTo;
 import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;

@@ -21,6 +21,11 @@ public class MunicipalityServiceImpl implements MunicipalityService {
     public MunicipalityServiceImpl(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
+    public class MunicipalityServiceException extends RuntimeException {
+        public MunicipalityServiceException(String message, Throwable cause) {
+            super(message, cause);
+        }
+    }
 
     @Override
     public List<String> getAllMunicipalities() {
@@ -47,8 +52,7 @@ public class MunicipalityServiceImpl implements MunicipalityService {
             return municipalities;
             
         } catch (Exception e) {
-            log.error("Error fetching municipalities from external API", e);
-            throw new RuntimeException("Failed to fetch municipalities", e);
+            throw new MunicipalityServiceException("Failed to fetch municipalities from external API", e);
         }
     }
 }

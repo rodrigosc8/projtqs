@@ -25,7 +25,7 @@ public class StaffOperationsSteps {
         try {
             // Cria 2 bookings com status RECEIVED (é o que o backend usa)
             String jsonBody1 = "{\"municipality\":\"Aveiro\",\"date\":\"2026-12-12\",\"timeslot\":\"Manhã\",\"description\":\"Test Aveiro\"}";
-            String response1 = page.request().post("http://localhost:8080/api/bookings",
+            page.request().post("http://localhost:8080/api/bookings",
                 RequestOptions.create()
                     .setHeader("Content-Type", "application/json")
                     .setData(jsonBody1)
@@ -33,7 +33,7 @@ public class StaffOperationsSteps {
             log.info("Created test booking 1: Aveiro");
             
             String jsonBody2 = "{\"municipality\":\"Porto\",\"date\":\"2026-12-13\",\"timeslot\":\"Tarde\",\"description\":\"Test Porto\"}";
-            String response2 = page.request().post("http://localhost:8080/api/bookings",
+            page.request().post("http://localhost:8080/api/bookings",
                 RequestOptions.create()
                     .setHeader("Content-Type", "application/json")
                     .setData(jsonBody2)

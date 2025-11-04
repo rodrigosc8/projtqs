@@ -2,7 +2,6 @@ package pt.rodrigo.hw1_tqs.service.unit;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 import pt.rodrigo.hw1_tqs.entities.Booking;
 import pt.rodrigo.hw1_tqs.repositories.BookingRepository;
 import pt.rodrigo.hw1_tqs.services.BookingServiceImpl;
