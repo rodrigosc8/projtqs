@@ -39,8 +39,8 @@ public class BookingServiceImpl implements BookingService {
     @Override
     @Transactional
     public Booking createBooking(Booking booking) {
-        log.info("Creating new booking for municipality: {}, date: {}", 
-            booking.getMunicipality(), booking.getDate());
+        log.info("Creating new booking");
+
 
         validateRequiredFields(booking);
 
@@ -97,8 +97,8 @@ public class BookingServiceImpl implements BookingService {
     private void validateCapacity(String municipality, LocalDate date) {
         long currentCount = bookingRepository.countByMunicipalityAndDate(municipality, date);
         
-        log.info("Current bookings for {} on {}: {}/{}", 
-            municipality, date, currentCount, maxBookingsPerDay);
+        log.info("Checked booking capacity against maxBookingsPerDay.");
+
         
         if (currentCount >= maxBookingsPerDay) {
             log.warn("Maximum capacity reached for {} on {}", municipality, date);

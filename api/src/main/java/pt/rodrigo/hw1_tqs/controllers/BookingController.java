@@ -36,8 +36,8 @@ public class BookingController {
     @PostMapping
     public ResponseEntity<Booking> createBooking(@RequestBody BookingDTO dto) {
         log.info("POST /api/bookings - Creating booking");
-        log.info("Received DTO: municipality={}, date={}, timeslot={}, description={}", 
-            dto.getMunicipality(), dto.getDate(), dto.getTimeslot(), dto.getDescription());
+        log.info("Received new booking request DTO");
+
         
         try {
             Booking booking = new Booking();
@@ -58,7 +58,7 @@ public class BookingController {
 
     @GetMapping("/{token}")
     public ResponseEntity<Booking> getBookingByToken(@PathVariable String token) {
-        log.info("GET /api/bookings/{} - Fetching booking", token);
+        log.info("GET /api/bookings/{token} - Fetching booking");
         try {
             Booking booking = bookingService.getBookingByToken(token);
             return new ResponseEntity<>(booking, HttpStatus.OK);
@@ -92,7 +92,7 @@ public class BookingController {
             @PathVariable String token,
             @RequestBody Map<String, String> statusUpdate
     ) {
-        log.info("PUT /api/bookings/{}/status - Updating status", token);
+        log.info("PUT /api/bookings/{token}/status - Updating status");
         try {
             BookingStatus newStatus = BookingStatus.valueOf(statusUpdate.get("newStatus"));
             String note = statusUpdate.getOrDefault("note", "");
@@ -109,17 +109,17 @@ public class BookingController {
     }
 
     @DeleteMapping("/{token}")
-    public ResponseEntity cancelBooking(@PathVariable String token) {
-        log.info("DELETE /api/bookings/{} - Cancelling booking", token);
+    public ResponseEntity<Void> cancelBooking(@PathVariable String token) {
+        log.info("DELETE /api/bookings/{token} - Cancelling booking");
         try {
             bookingService.cancelBooking(token);
-            return new ResponseEntity(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } catch (IllegalArgumentException e) {
             log.error("Booking not found: {}", e.getMessage());
-            return new ResponseEntity(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (IllegalStateException e) {
             log.error("Cannot cancel booking: {}", e.getMessage());
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
 }
