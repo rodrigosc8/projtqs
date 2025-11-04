@@ -2,6 +2,7 @@ package pt.rodrigo.hw1_tqs.service.unit;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import pt.rodrigo.hw1_tqs.entities.Booking;
 import pt.rodrigo.hw1_tqs.entities.BookingStatus;
 
@@ -277,6 +278,50 @@ class BookingServiceWithMocksTest {
         );
         assertTrue(e.getMessage().contains("already cancelled"));
     }
+
+    @Test
+    void transicaoEstadoInvalida_LancaExcecao() {
+        Booking booking = new Booking();
+        booking.setToken("test-token-789");
+        booking.setStatus(BookingStatus.CANCELLED);
+        
+        when(bookingRepository.findByToken("test-token-789"))
+            .thenReturn(java.util.Optional.of(booking));
+        
+        Exception e = assertThrows(IllegalArgumentException.class, () ->
+            service.updateBookingStatus("test-token-789", BookingStatus.RECEIVED, "note")
+        );
+        assertTrue(e.getMessage().contains("Cannot change status of a cancelled booking"));
+    }
+
+    @Test
+    void getBookingByToken_ComSucesso() {
+        Booking booking = new Booking();
+        booking.setToken("valid-token");
+        
+        when(bookingRepository.findByToken("valid-token"))
+            .thenReturn(java.util.Optional.of(booking));
+        
+        Booking result = service.getBookingByToken("valid-token");
+        
+        assertEquals("valid-token", result.getToken());
+    }
+
+    @Test
+    void getBookingByToken_NaoEncontrado_LancaExcecao() {
+        when(bookingRepository.findByToken("invalid-token"))
+            .thenReturn(java.util.Optional.empty());
+        
+        Exception e = assertThrows(IllegalArgumentException.class, () ->
+            service.getBookingByToken("invalid-token")
+        );
+        assertTrue(e.getMessage().contains("Booking not found"));
+    }
+
+    
+
+
+
 
 
 
