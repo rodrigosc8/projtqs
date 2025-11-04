@@ -4121,3 +4121,592 @@
 2025-11-04T12:57:41.518Z  INFO 53002 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-04T12:57:41.519Z  INFO 53002 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2025-11-04T12:57:41.520Z  INFO 53002 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-11-04T13:11:50.151Z  INFO 58788 --- [main] p.r.h.i.BookingControllerITTest          : Starting BookingControllerITTest using Java 21.0.9-ea with PID 58788 (started by rodrigo-costa in /home/rodrigo-costa/Documentos/projtqs/api)
+2025-11-04T13:11:50.152Z  INFO 58788 --- [main] p.r.h.i.BookingControllerITTest          : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T13:11:50.166Z DEBUG 58788 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@67afc9b6
+2025-11-04T13:11:50.767Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04T13:11:50.814Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-11-04T13:11:51.193Z  INFO 58788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04T13:11:51.230Z  INFO 58788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-04T13:11:51.252Z  INFO 58788 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-04T13:11:51.340Z  INFO 58788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04T13:11:51.362Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-04T13:11:51.570Z  INFO 58788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hw1db user=SA
+2025-11-04T13:11:51.573Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-04T13:11:51.600Z  WARN 58788 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04T13:11:51.619Z  INFO 58788 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04T13:11:52.298Z  INFO 58788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04T13:11:52.341Z  INFO 58788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:11:52.530Z  INFO 58788 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-04T13:11:53.057Z  WARN 58788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04T13:11:53.118Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-11-04T13:11:53.166Z DEBUG 58788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-04T13:11:53.184Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04T13:11:53.219Z DEBUG 58788 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04T13:11:53.293Z  INFO 58788 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:hw1db'
+2025-11-04T13:11:53.335Z  INFO 58788 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-11-04T13:11:53.335Z  INFO 58788 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-11-04T13:11:53.336Z  INFO 58788 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-11-04T13:11:53.352Z  INFO 58788 --- [main] p.r.h.i.BookingControllerITTest          : Started BookingControllerITTest in 3.524 seconds (process running for 5.782)
+2025-11-04T13:11:53.387Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:53.436Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@2b653f71]
+2025-11-04T13:11:53.440Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:53.440Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:53.445Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:53.445Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:53.512Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:53.518Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:53.856Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:53.857Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:53.862Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:53.862Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:53.945Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:53.988Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 2bd64065-f2c9-4321-a582-244c8c0c8173
+2025-11-04T13:11:54.018Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.019Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@4f706528]
+2025-11-04T13:11:54.036Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:54.036Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@7e9bb983]
+2025-11-04T13:11:54.037Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:54.037Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:54.037Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:54.037Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.037Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.037Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:54.093Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:54.094Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:54.097Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:54.097Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:54.098Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:54.101Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 181adf12-35c4-4fda-9b4d-60b03604e669
+2025-11-04T13:11:54.102Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.102Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@26a0aa6d]
+2025-11-04T13:11:54.104Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:54.105Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@5d74e8a0]
+2025-11-04T13:11:54.105Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:54.105Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:54.106Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:54.106Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.106Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.106Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:54.162Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:54.162Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:54.164Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:54.165Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:54.168Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:54.175Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: ebd26a2d-e09d-4dea-9539-8d8c050a113f
+2025-11-04T13:11:54.177Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.177Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@7a4154c0]
+2025-11-04T13:11:54.180Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:11:54.186Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:11:54.187Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: Braga, date: null, status: null
+2025-11-04T13:11:54.215Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.215Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:11:54.268Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:54.269Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@74ea8a33]
+2025-11-04T13:11:54.269Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:54.269Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:54.269Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:54.269Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.270Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.270Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:54.325Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:54.326Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:54.328Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:54.328Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:54.331Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:54.337Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: bc78af3b-97a0-4d48-8e85-8fbc64f1a176
+2025-11-04T13:11:54.340Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.340Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@28bbdc43]
+2025-11-04T13:11:54.354Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#getBookingByToken(String)
+2025-11-04T13:11:54.355Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : GET /api/bookings/{token} - Fetching booking
+2025-11-04T13:11:54.355Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Fetching booking by token: token-inexistente
+2025-11-04T13:11:54.359Z ERROR 58788 --- [main] p.r.h.controllers.BookingController      : Booking not found: Booking not found with token: token-inexistente
+2025-11-04T13:11:54.360Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.360Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-11-04T13:11:54.368Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:54.369Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@3a8d3643]
+2025-11-04T13:11:54.369Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:54.369Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:54.370Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:54.370Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.370Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.371Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:54.424Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:54.425Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:54.425Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:54.425Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:54.426Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:54.429Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 20f33c15-eff3-4af3-a609-593cdac8e1e6
+2025-11-04T13:11:54.430Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.430Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@5eaa0712]
+2025-11-04T13:11:54.432Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#updateBookingStatus(String, Map)
+2025-11-04T13:11:54.434Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{newStatus=IN_PROGRESS}]
+2025-11-04T13:11:54.434Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : PUT /api/bookings/{token}/status - Updating status
+2025-11-04T13:11:54.434Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Updating booking status - token: 20f33c15-eff3-4af3-a609-593cdac8e1e6, newStatus: IN_PROGRESS
+2025-11-04T13:11:54.434Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Fetching booking by token: 20f33c15-eff3-4af3-a609-593cdac8e1e6
+2025-11-04T13:11:54.440Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking status updated successfully
+2025-11-04T13:11:54.448Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:54.448Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@3467b97b]
+2025-11-04T13:11:54.457Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:54.457Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@2ebdeb5a]
+2025-11-04T13:11:54.458Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:54.458Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:54.458Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:54.458Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.458Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:54.458Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:55.038Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:55.039Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:55.040Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:55.041Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:55.042Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:55.044Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 13d4a17d-146b-47bd-bb48-4edfabd4c615
+2025-11-04T13:11:55.045Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:55.045Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@4927d70d]
+2025-11-04T13:11:55.046Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#getBookingByToken(String)
+2025-11-04T13:11:55.046Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : GET /api/bookings/{token} - Fetching booking
+2025-11-04T13:11:55.046Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Fetching booking by token: 13d4a17d-146b-47bd-bb48-4edfabd4c615
+2025-11-04T13:11:55.048Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:55.048Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@5ef71497]
+2025-11-04T13:11:55.056Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:55.056Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@48baaf58]
+2025-11-04T13:11:55.057Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:55.057Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:55.057Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:55.057Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:55.057Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:55.057Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:55.112Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:55.113Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:55.114Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:55.114Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:55.114Z  WARN 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Attempted to create booking with past date: 2020-01-01
+2025-11-04T13:11:55.118Z ERROR 58788 --- [main] p.r.h.controllers.BookingController      : Validation error: Date cannot be in the past
+2025-11-04T13:11:55.119Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:55.120Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-11-04T13:11:55.131Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:55.131Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@2b2b8ac5]
+2025-11-04T13:11:55.132Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:55.132Z  INFO 58788 --- [main] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:55.132Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:55.132Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:55.132Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:55.133Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:55.188Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:55.189Z DEBUG 58788 --- [main] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:55.191Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:55.191Z  INFO 58788 --- [main] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:55.195Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:55.202Z  INFO 58788 --- [main] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: e58dc58e-daf6-4743-a984-b2f445418190
+2025-11-04T13:11:55.204Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:11:55.205Z DEBUG 58788 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@1fe2c45c]
+2025-11-04T13:11:55.207Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#updateBookingStatus(String, Map)
+2025-11-04T13:11:55.208Z DEBUG 58788 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to []
+2025-11-04T13:11:55.211Z  WARN 58788 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<pt.rodrigo.hw1_tqs.entities.Booking> pt.rodrigo.hw1_tqs.controllers.BookingController.updateBookingStatus(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)]
+2025-11-04T13:11:55.219Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.Hw1TqsApplicationTests]: Hw1TqsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:11:55.222Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.Hw1TqsApplicationTests
+2025-11-04T13:11:55.225Z  INFO 58788 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-11-04T13:11:55.235Z  INFO 58788 --- [main] p.r.hw1_tqs.Hw1TqsApplicationTests       : Starting Hw1TqsApplicationTests using Java 21.0.9-ea with PID 58788 (started by rodrigo-costa in /home/rodrigo-costa/Documentos/projtqs/api)
+2025-11-04T13:11:55.236Z  INFO 58788 --- [main] p.r.hw1_tqs.Hw1TqsApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T13:11:55.236Z DEBUG 58788 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e073bf9
+2025-11-04T13:11:55.304Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04T13:11:55.309Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2025-11-04T13:11:55.346Z  INFO 58788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04T13:11:55.347Z  INFO 58788 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-04T13:11:55.351Z  INFO 58788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04T13:11:55.352Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-11-04T13:11:55.353Z  INFO 58788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:hw1db user=SA
+2025-11-04T13:11:55.353Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-11-04T13:11:55.353Z  WARN 58788 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04T13:11:55.353Z  INFO 58788 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04T13:11:55.376Z  INFO 58788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04T13:11:55.381Z  INFO 58788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:11:55.418Z  WARN 58788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04T13:11:55.429Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-11-04T13:11:55.437Z DEBUG 58788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-04T13:11:55.440Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04T13:11:55.443Z DEBUG 58788 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04T13:11:55.459Z  INFO 58788 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:hw1db'
+2025-11-04T13:11:55.469Z  INFO 58788 --- [main] p.r.hw1_tqs.Hw1TqsApplicationTests       : Started Hw1TqsApplicationTests in 0.244 seconds (process running for 7.898)
+2025-11-04T13:11:55.750Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration]: CucumberSpringConfiguration does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:11:55.753Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration
+2025-11-04T13:11:55.755Z  INFO 58788 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-11-04T13:11:55.765Z  INFO 58788 --- [main] p.r.h.b.c.CucumberSpringConfiguration    : Starting CucumberSpringConfiguration using Java 21.0.9-ea with PID 58788 (started by rodrigo-costa in /home/rodrigo-costa/Documentos/projtqs/api)
+2025-11-04T13:11:55.765Z  INFO 58788 --- [main] p.r.h.b.c.CucumberSpringConfiguration    : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T13:11:55.823Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04T13:11:55.828Z  INFO 58788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
+2025-11-04T13:11:55.963Z  INFO 58788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-04T13:11:55.975Z  INFO 58788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-04T13:11:55.976Z  INFO 58788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-04T13:11:56.006Z  INFO 58788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-04T13:11:56.006Z  INFO 58788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2025-11-04T13:11:56.045Z  INFO 58788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04T13:11:56.046Z  INFO 58788 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-04T13:11:56.050Z  INFO 58788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04T13:11:56.050Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-11-04T13:11:56.051Z  INFO 58788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:hw1db user=SA
+2025-11-04T13:11:56.051Z  INFO 58788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-11-04T13:11:56.051Z  WARN 58788 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04T13:11:56.051Z  INFO 58788 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04T13:11:56.071Z  INFO 58788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04T13:11:56.076Z  INFO 58788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:11:56.106Z  WARN 58788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04T13:11:56.114Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2025-11-04T13:11:56.124Z DEBUG 58788 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-04T13:11:56.128Z DEBUG 58788 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04T13:11:56.131Z DEBUG 58788 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04T13:11:56.143Z  INFO 58788 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:hw1db'
+2025-11-04T13:11:56.188Z  INFO 58788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-04T13:11:56.190Z  INFO 58788 --- [main] p.r.h.b.c.CucumberSpringConfiguration    : Started CucumberSpringConfiguration in 0.435 seconds (process running for 8.619)
+2025-11-04T13:11:56.223Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Initializing Playwright browser
+2025-11-04T13:11:57.268Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Citizen on homepage
+2025-11-04T13:11:57.358Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Navigated to citizen page
+2025-11-04T13:11:57.413Z  INFO 58788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04T13:11:57.413Z  INFO 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-04T13:11:57.413Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-11-04T13:11:57.413Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-11-04T13:11:57.414Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-11-04T13:11:57.414Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3462c9ab
+2025-11-04T13:11:57.414Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@20313d10
+2025-11-04T13:11:57.414Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-04T13:11:57.414Z  INFO 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-04T13:11:57.417Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:11:57.418Z DEBUG 58788 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:11:57.419Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:57.419Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:57.420Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:57.474Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:57.475Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:57.477Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:57.478Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:57.481Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:11:57.482Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:11:57.493Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:11:57.500Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:11:57.501Z DEBUG 58788 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:11:57.502Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:57.503Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:57.503Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:57.559Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:57.560Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:57.561Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:57.561Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:57.562Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:11:57.563Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:11:57.565Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:11:59.425Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Selected municipality: Aveiro
+2025-11-04T13:11:59.447Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Entered date: 2025-11-20
+2025-11-04T13:11:59.460Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Selected timeslot: Manhã
+2025-11-04T13:11:59.476Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Entered description: Colchão e mobília velha
+2025-11-04T13:11:59.514Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:11:59.515Z DEBUG 58788 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:11:59.518Z DEBUG 58788 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@3947b4d3]
+2025-11-04T13:11:59.518Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:11:59.518Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:11:59.519Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:11:59.519Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:59.519Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:11:59.519Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:11:59.576Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:11:59.576Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:11:59.577Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:11:59.578Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:11:59.590Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:11:59.595Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: c1b6f0dc-2d20-4abc-aafd-f411d513bfe0
+2025-11-04T13:11:59.599Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:11:59.600Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@7c09f5a7]
+2025-11-04T13:11:59.602Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:01.529Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Form submitted
+2025-11-04T13:12:01.536Z  INFO 58788 --- [main] p.r.h.bdd.steps.CitizenBookingSteps      : Booking created successfully
+2025-11-04T13:12:01.536Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing Playwright browser context
+2025-11-04T13:12:01.557Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration]: CucumberSpringConfiguration does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:12:01.559Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration
+2025-11-04T13:12:01.569Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Initializing Playwright browser
+2025-11-04T13:12:01.616Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:01.617Z DEBUG 58788 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:01.618Z DEBUG 58788 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@3cc9c26b]
+2025-11-04T13:12:01.618Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:01.618Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:01.618Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:01.618Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:01.619Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:01.619Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:01.675Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:01.676Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:01.677Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:01.677Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:01.680Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:01.687Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd
+2025-11-04T13:12:01.689Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:01.689Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@733321b9]
+2025-11-04T13:12:01.690Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:01.700Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Created booking with token: d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd
+2025-11-04T13:12:02.018Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : User on homepage
+2025-11-04T13:12:02.053Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Navigated to search page
+2025-11-04T13:12:02.086Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Entered token: d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd
+2025-11-04T13:12:02.128Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings/d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd", parameters={}
+2025-11-04T13:12:02.129Z DEBUG 58788 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#getBookingByToken(String)
+2025-11-04T13:12:02.130Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.controllers.BookingController      : GET /api/bookings/{token} - Fetching booking
+2025-11-04T13:12:02.130Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.hw1_tqs.services.BookingServiceImpl  : Fetching booking by token: d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd
+2025-11-04T13:12:02.133Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:02.133Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@6c44487b]
+2025-11-04T13:12:02.134Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:03.630Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Clicked search button
+2025-11-04T13:12:03.634Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Booking details displayed
+2025-11-04T13:12:03.639Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Details contain: d9fb1ee9-b8b7-4f24-b952-c715da3cf3bd
+2025-11-04T13:12:03.639Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing Playwright browser context
+2025-11-04T13:12:03.650Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration]: CucumberSpringConfiguration does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:12:03.651Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration
+2025-11-04T13:12:03.659Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Initializing Playwright browser
+2025-11-04T13:12:03.694Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:03.694Z DEBUG 58788 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:03.695Z DEBUG 58788 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@507e91df]
+2025-11-04T13:12:03.695Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:03.695Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:03.695Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:03.695Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:03.696Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:03.696Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:03.749Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:03.750Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:03.750Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:03.750Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:03.751Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:03.753Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 0a0e1afc-a143-42cd-b1fe-3e866097fab0
+2025-11-04T13:12:03.754Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:03.754Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@2e511362]
+2025-11-04T13:12:03.755Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:03.756Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Created booking with token: 0a0e1afc-a143-42cd-b1fe-3e866097fab0
+2025-11-04T13:12:03.852Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : User on homepage
+2025-11-04T13:12:03.891Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Navigated to search page
+2025-11-04T13:12:03.917Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Entered token: INVALID
+2025-11-04T13:12:03.977Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings/INVALID", parameters={}
+2025-11-04T13:12:03.977Z DEBUG 58788 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#getBookingByToken(String)
+2025-11-04T13:12:03.978Z  INFO 58788 --- [http-nio-8080-exec-7] p.r.h.controllers.BookingController      : GET /api/bookings/{token} - Fetching booking
+2025-11-04T13:12:03.978Z  INFO 58788 --- [http-nio-8080-exec-7] p.r.hw1_tqs.services.BookingServiceImpl  : Fetching booking by token: INVALID
+2025-11-04T13:12:03.980Z ERROR 58788 --- [http-nio-8080-exec-7] p.r.h.controllers.BookingController      : Booking not found: Booking not found with token: INVALID
+2025-11-04T13:12:03.980Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:03.980Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2025-11-04T13:12:03.980Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2025-11-04T13:12:05.479Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Clicked search button
+2025-11-04T13:12:05.489Z  INFO 58788 --- [main] p.rodrigo.hw1_tqs.bdd.steps.SearchSteps  : Error message displayed
+2025-11-04T13:12:05.490Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing Playwright browser context
+2025-11-04T13:12:05.508Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration]: CucumberSpringConfiguration does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:12:05.509Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration
+2025-11-04T13:12:05.518Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Initializing Playwright browser
+2025-11-04T13:12:05.547Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:05.548Z DEBUG 58788 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:05.549Z DEBUG 58788 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@2164827d]
+2025-11-04T13:12:05.549Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:05.549Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:05.549Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:05.549Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.550Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.550Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:05.604Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:05.605Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:05.607Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:05.607Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:05.611Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:05.620Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 288b429d-d970-4e67-83e4-4fefb2890687
+2025-11-04T13:12:05.621Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:05.621Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@5f3a7df2]
+2025-11-04T13:12:05.623Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:05.624Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Created test booking 1: Aveiro
+2025-11-04T13:12:05.628Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:05.628Z DEBUG 58788 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:05.630Z DEBUG 58788 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@10bc2af]
+2025-11-04T13:12:05.630Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:05.630Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:05.630Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:05.630Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.631Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.631Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:05.685Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:05.686Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:05.687Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:05.687Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:05.690Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:05.691Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 5b5cab05-d0a4-4ecd-aa45-8daeff527758
+2025-11-04T13:12:05.692Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:05.692Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@4ef126c5]
+2025-11-04T13:12:05.693Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:05.694Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Created test booking 2: Porto
+2025-11-04T13:12:05.812Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Staff member on homepage
+2025-11-04T13:12:05.883Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Navigated to staff page
+2025-11-04T13:12:05.889Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:12:05.889Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?page=0&size=100", parameters={masked}
+2025-11-04T13:12:05.889Z DEBUG 58788 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:12:05.889Z DEBUG 58788 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:05.889Z  INFO 58788 --- [http-nio-8080-exec-10] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.890Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:05.890Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.890Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: null, date: null, status: null
+2025-11-04T13:12:05.890Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:05.898Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:05.898Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:05.903Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:05.905Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?page=0&size=100", parameters={masked}
+2025-11-04T13:12:05.905Z DEBUG 58788 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:05.906Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:05.906Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: null, date: null, status: null
+2025-11-04T13:12:05.908Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:05.908Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:05.912Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:05.944Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:05.944Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:05.945Z  INFO 58788 --- [http-nio-8080-exec-10] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:05.945Z  INFO 58788 --- [http-nio-8080-exec-10] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:05.946Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:05.946Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:12:05.947Z DEBUG 58788 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:05.951Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:12:05.951Z DEBUG 58788 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:12:05.952Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.952Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:05.952Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:06.006Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:06.007Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:06.008Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:06.008Z  INFO 58788 --- [http-nio-8080-exec-3] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:06.009Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:06.009Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:12:06.012Z DEBUG 58788 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:07.935Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Selected municipality filter: Aveiro
+2025-11-04T13:12:07.984Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?municipality=Aveiro&page=0&size=100", parameters={masked}
+2025-11-04T13:12:07.984Z DEBUG 58788 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:07.985Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:07.985Z  INFO 58788 --- [http-nio-8080-exec-4] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: Aveiro, date: null, status: null
+2025-11-04T13:12:07.989Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:07.989Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:07.992Z DEBUG 58788 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:09.512Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Clicked filter button
+2025-11-04T13:12:09.518Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Only bookings from Aveiro displayed
+2025-11-04T13:12:09.518Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing Playwright browser context
+2025-11-04T13:12:09.528Z  INFO 58788 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration]: CucumberSpringConfiguration does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-04T13:12:09.529Z  INFO 58788 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pt.rodrigo.hw1_tqs.Hw1TqsApplication for test class pt.rodrigo.hw1_tqs.bdd.config.CucumberSpringConfiguration
+2025-11-04T13:12:09.537Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Initializing Playwright browser
+2025-11-04T13:12:09.568Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:09.568Z DEBUG 58788 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:09.569Z DEBUG 58788 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@46677ad5]
+2025-11-04T13:12:09.569Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:09.569Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:09.569Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:09.569Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.569Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.569Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:09.636Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:09.637Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:09.638Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:09.638Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:09.641Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:09.650Z  INFO 58788 --- [http-nio-8080-exec-5] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: 7c1748c6-37d9-4524-8f6b-8d4073d76af0
+2025-11-04T13:12:09.652Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.652Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@163bbdc6]
+2025-11-04T13:12:09.653Z DEBUG 58788 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:09.655Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Created test booking 1: Aveiro
+2025-11-04T13:12:09.658Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2025-11-04T13:12:09.658Z DEBUG 58788 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#createBooking(BookingDTO)
+2025-11-04T13:12:09.659Z DEBUG 58788 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [pt.rodrigo.hw1_tqs.dto.BookingDTO@577dadb1]
+2025-11-04T13:12:09.659Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.controllers.BookingController      : POST /api/bookings - Creating booking
+2025-11-04T13:12:09.659Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.controllers.BookingController      : Received new booking request DTO
+2025-11-04T13:12:09.659Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Creating new booking
+2025-11-04T13:12:09.659Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.660Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.660Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:09.713Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:09.714Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:09.715Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:09.715Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:09.718Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Checked booking capacity against maxBookingsPerDay.
+2025-11-04T13:12:09.725Z  INFO 58788 --- [http-nio-8080-exec-6] p.r.hw1_tqs.services.BookingServiceImpl  : Booking created successfully with token: d32e05bc-2ad4-4862-a12e-46010e727bec
+2025-11-04T13:12:09.728Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.728Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [pt.rodrigo.hw1_tqs.entities.Booking@27dccb96]
+2025-11-04T13:12:09.730Z DEBUG 58788 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-11-04T13:12:09.733Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Created test booking 2: Porto
+2025-11-04T13:12:09.839Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Staff member on homepage
+2025-11-04T13:12:09.906Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Navigated to staff page
+2025-11-04T13:12:09.910Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:12:09.911Z DEBUG 58788 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:12:09.911Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?page=0&size=100", parameters={masked}
+2025-11-04T13:12:09.911Z  INFO 58788 --- [http-nio-8080-exec-7] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.911Z DEBUG 58788 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:09.911Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.911Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:09.912Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:09.912Z  INFO 58788 --- [http-nio-8080-exec-8] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: null, date: null, status: null
+2025-11-04T13:12:09.914Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.914Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:09.918Z DEBUG 58788 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:09.919Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Selected status filter: RECEIVED
+2025-11-04T13:12:09.921Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?page=0&size=100", parameters={masked}
+2025-11-04T13:12:09.922Z DEBUG 58788 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:09.923Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:09.923Z  INFO 58788 --- [http-nio-8080-exec-9] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: null, date: null, status: null
+2025-11-04T13:12:09.929Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.929Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:09.932Z DEBUG 58788 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:09.961Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/bookings?status=RECEIVED&page=0&size=100", parameters={masked}
+2025-11-04T13:12:09.962Z DEBUG 58788 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.BookingController#searchBookings(String, LocalDate, BookingStatus, int, int)
+2025-11-04T13:12:09.963Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.h.controllers.BookingController      : GET /api/bookings - Searching bookings
+2025-11-04T13:12:09.963Z  INFO 58788 --- [http-nio-8080-exec-1] p.r.hw1_tqs.services.BookingServiceImpl  : Searching bookings - municipality: null, date: null, status: RECEIVED
+2025-11-04T13:12:09.964Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:09.964Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:09.965Z  INFO 58788 --- [http-nio-8080-exec-7] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:09.965Z  INFO 58788 --- [http-nio-8080-exec-7] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:09.965Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.966Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:12:09.968Z DEBUG 58788 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:09.974Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:09.974Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/municipalities", parameters={}
+2025-11-04T13:12:09.974Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Page 1 of 1 containing pt.rodrigo.hw1_tqs.entities.Booking instances]
+2025-11-04T13:12:09.975Z DEBUG 58788 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to pt.rodrigo.hw1_tqs.controllers.MunicipalityController#getAllMunicipalities()
+2025-11-04T13:12:09.975Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Fetching municipalities from: https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.976Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP GET https://geoapi.pt/municipios?json=true
+2025-11-04T13:12:09.977Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-11-04T13:12:09.981Z DEBUG 58788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:10.030Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2025-11-04T13:12:10.031Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [java.util.List<java.lang.String>]
+2025-11-04T13:12:10.031Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Received 308 municipalities
+2025-11-04T13:12:10.031Z  INFO 58788 --- [http-nio-8080-exec-2] p.r.h.services.MunicipalityServiceImpl   : Returning 308 municipality names
+2025-11-04T13:12:10.032Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04T13:12:10.032Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Abrantes, Aguiar da Beira, Alandroal, Albergaria-a-velha, Albufeira, Alcanena, Alcobaça, Alcochete, (truncated)...]
+2025-11-04T13:12:10.033Z DEBUG 58788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-11-04T13:12:11.465Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Clicked filter button
+2025-11-04T13:12:11.483Z  INFO 58788 --- [main] p.r.h.bdd.steps.StaffOperationsSteps     : Only bookings with status RECEIVED displayed
+2025-11-04T13:12:11.484Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing Playwright browser context
+2025-11-04T13:12:11.502Z  INFO 58788 --- [main] p.r.hw1_tqs.bdd.config.PlaywrightHooks   : Closing all Playwright resources
+2025-11-04T13:12:11.547Z DEBUG 58788 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@67afc9b6, started on Tue Nov 04 13:11:50 WET 2025
+2025-11-04T13:12:11.549Z  INFO 58788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:12:11.618Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-04T13:12:11.619Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-04T13:12:11.619Z DEBUG 58788 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1e073bf9, started on Tue Nov 04 13:11:55 WET 2025
+2025-11-04T13:12:11.620Z  INFO 58788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:12:11.621Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-11-04T13:12:11.621Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-11-04T13:12:11.622Z  INFO 58788 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04T13:12:11.624Z  INFO 58788 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-04T13:12:11.625Z  INFO 58788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T13:12:11.626Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-11-04T13:12:11.627Z  INFO 58788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
