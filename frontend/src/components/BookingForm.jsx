@@ -13,7 +13,6 @@ function BookingForm({ onSuccess }) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  // Buscar municípios quando o componente carrega
   useEffect(() => {
     const fetchMunicipalities = async () => {
       try {
@@ -35,12 +34,11 @@ function BookingForm({ onSuccess }) {
 
     try {
       const response = await axios.post('/api/bookings', formData)
-      console.log('✅ Sucesso:', response.data)
+      console.log('Sucesso:', response.data)
       onSuccess(response.data)
-      // Reset form
       setFormData({ municipality: '', date: '', timeslot: '', description: '' })
     } catch (err) {
-      console.error('❌ Erro completo:', err)
+      console.error('Erro completo:', err)
       setError('Erro ao criar reserva. Verifique os dados.')
     } finally {
       setLoading(false)

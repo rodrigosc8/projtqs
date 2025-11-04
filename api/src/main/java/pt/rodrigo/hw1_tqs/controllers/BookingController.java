@@ -15,7 +15,6 @@ import pt.rodrigo.hw1_tqs.entities.BookingStatus;
 import pt.rodrigo.hw1_tqs.services.BookingService;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
 import static java.lang.invoke.MethodHandles.lookup;

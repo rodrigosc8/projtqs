@@ -18,7 +18,7 @@ export default function CitizenPage() {
       {showSuccess && createdBooking && (
         <div className="success-modal">
           <div className="modal-content">
-            <h2>✅ Reserva Criada com Sucesso!</h2>
+            <h2>Reserva Criada com Sucesso!</h2>
             <div className="token-display">
               <strong>Token:</strong>
               <code>{createdBooking.token}</code>
