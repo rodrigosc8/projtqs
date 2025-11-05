@@ -31,28 +31,24 @@ public class MunicipalityServiceImpl implements MunicipalityService {
     public List<String> getAllMunicipalities() {
         try {
             log.info("Fetching municipalities from: {}", API_URL);
-            
             ResponseEntity<List<String>> response = restTemplate.exchange(
                 API_URL,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<String>>() {}
             );
-
             List<String> municipalities = response.getBody();
             log.info("Received {} municipalities", municipalities != null ? municipalities.size() : 0);
-            
             if (municipalities == null || municipalities.isEmpty()) {
                 return Collections.emptyList();
             }
-
             Collections.sort(municipalities);
-            
             log.info("Returning {} municipality names", municipalities.size());
             return municipalities;
-            
         } catch (Exception e) {
-            throw new MunicipalityServiceException("Failed to fetch municipalities from external API", e);
+            log.error("Error fetching municipalities from external API", e);
+            return Collections.emptyList(); // <-- MUDOU AQUI: retorna lista vazia em vez de lançar exceção
         }
     }
+
 }
