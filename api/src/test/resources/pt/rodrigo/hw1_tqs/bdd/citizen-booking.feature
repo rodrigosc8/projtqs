@@ -12,3 +12,6 @@ Feature: Citizen Booking Management
     And the citizen enters description "Colchão e mobília velha"
     When the citizen submits the booking form
     Then the booking is created successfully
+
+
+

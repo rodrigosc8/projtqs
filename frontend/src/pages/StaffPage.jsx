@@ -136,7 +136,7 @@ export default function StaffPage() {
       ) : (
         <BookingTable 
           bookings={bookings} 
-          onRowClick={handleRowClick}
+          onSelectBooking={handleRowClick}
         />
       )}
 

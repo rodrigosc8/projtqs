@@ -34,7 +34,7 @@ class BookingControllerITTest {
     }
 
     /**
-     *Criar booking (POST /api/bookings) - Caso positivo
+     *Criar booking - Caso positivo
      */
     @Test
     @DisplayName("POST /api/bookings - OK")
@@ -79,12 +79,11 @@ class BookingControllerITTest {
     }
 
     /**
-     * Obter booking por token (GET /api/bookings/{token})
+     * Obter booking por token 
      */
     @Test
     @DisplayName("GET /api/bookings/{token} - OK")
     void whenGetBookingByValidToken_thenReturnsOk() throws Exception {
-        // Primeiro, cria um booking
         String bookingJson = """
             {
                 "municipality": "Porto",
@@ -102,10 +101,8 @@ class BookingControllerITTest {
                 .getResponse()
                 .getContentAsString();
 
-        // Extrai o token da resposta (usa regex simples ou parser JSON)
         String token = responseBody.split("\"token\":\"")[1].split("\"")[0];
 
-        // Agora busca pelo token
         mvc.perform(get("/api/bookings/" + token)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())                
@@ -126,12 +123,11 @@ class BookingControllerITTest {
     }
 
     /**
-     * Listar bookings por município (GET /api/bookings?municipality=Braga)
+     * Listar bookings por município 
      */
     @Test
     @DisplayName("GET /api/bookings?municipality=Braga - OK")
     void whenListBookingsByMunicipality_thenReturnsFiltered() throws Exception {
-        // Cria 2 bookings para Braga
         String booking1 = """
             {
                 "municipality": "Braga",
@@ -150,7 +146,6 @@ class BookingControllerITTest {
             }
             """;
 
-        // Cria 1 booking para Porto (não deve aparecer na lista)
         String booking3 = """
             {
                 "municipality": "Porto",
@@ -167,7 +162,6 @@ class BookingControllerITTest {
         mvc.perform(post("/api/bookings").contentType(MediaType.APPLICATION_JSON).content(booking3))
                 .andExpect(status().isCreated());
 
-        // Lista apenas os de Braga
         mvc.perform(get("/api/bookings").param("municipality", "Braga")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -177,12 +171,11 @@ class BookingControllerITTest {
     }
 
     /**
-     * Atualizar estado (PUT /api/bookings/{token}/state?newState=IN_PROGRESS)
+     * Atualizar estado
      */
     @Test
     @DisplayName("PUT /api/bookings/{token}/state - OK")
     void whenUpdateBookingState_thenReturnsOk() throws Exception {
-        // Cria booking
         String bookingJson = """
             {
                 "municipality": "Lisboa",
@@ -202,7 +195,6 @@ class BookingControllerITTest {
 
         String token = responseBody.split("\"token\":\"")[1].split("\"")[0];
 
-        // Atualiza o estado para IN_PROGRESS
         String body = """
             { "newStatus": "IN_PROGRESS" }
             """;
@@ -221,7 +213,6 @@ class BookingControllerITTest {
     @Test
     @DisplayName("PUT /api/bookings/{token}/status - BAD REQUEST (estado inválido)")
     void whenUpdateBookingWithInvalidState_thenReturnsBadRequest() throws Exception {
-        // Cria booking
         String bookingJson = """
             {
                 "municipality": "Coimbra",
@@ -241,7 +232,6 @@ class BookingControllerITTest {
 
         String token = responseBody.split("\"token\":\"")[1].split("\"")[0];
 
-        // Tenta atualizar com estado inválido
         mvc.perform(put("/api/bookings/" + token + "/status")
                 .param("newState", "ESTADO_INVALIDO")
                 .contentType(MediaType.APPLICATION_JSON))
