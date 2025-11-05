@@ -144,6 +144,8 @@ export default function StaffPage() {
         <BookingDetails 
           token={selectedToken} 
           onClose={handleCloseDetails}
+          onUpdate={loadBookings}  
+
         />
       )}
     </div>
